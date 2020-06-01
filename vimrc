@@ -38,6 +38,14 @@ call vundle#end()            " required
 call glaive#Install()        " enable this line after the installation of glaive
 filetype plugin indent on    " required
 
+" custom setting
+set mouse=a
+set number
+set encoding=utf-8
+set backspace=indent,eol,start
+set cursorline
+set guioptions=
+syntax on
 syntax on
 
 " autoformat
