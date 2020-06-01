@@ -1,13 +1,9 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-set ignorecase
-set smartcase
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -39,14 +35,15 @@ call glaive#Install()        " enable this line after the installation of glaive
 filetype plugin indent on    " required
 
 " custom setting
-set mouse=a
+syntax on
 set number
-set encoding=utf-8
-set backspace=indent,eol,start
 set cursorline
-set guioptions=
-syntax on
-syntax on
+set cursorcolumn
+set hlsearch
+set incsearch
+set ignorecase
+"set smartcase
+set nowrap
 
 " autoformat
 augroup autoformat_settings
@@ -55,8 +52,6 @@ augroup autoformat_settings
 augroup END
 
 " setup for gruvbox theme
-set t_Co=256
 set background=dark
-colorscheme gruvbox
-" let g:gruvbox_contrast_dark = 'soft'
+"colorscheme gruvbox
 
